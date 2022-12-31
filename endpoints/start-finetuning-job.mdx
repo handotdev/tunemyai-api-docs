@@ -1,0 +1,13 @@
+---
+title: "Start a Finetuning Job"
+description: "Once you created the photo sets you want to finetune on, you can start a finetuning job."
+openapi: "POST /job/finetune"
+---
+
+The finetune endpoint takes three parameters:
+
+1. `imageSets`: The image sets you want to fine tune on as a list of the photo set slugs.
+2. `webhookUrl`: The webhook URL to report events, including when your job has finished.
+3. `trainingParams` (optional): The training parameters for the job.
+
+While we provide sensible defaults for training so you can leave, the full set of training parameters are shown below.

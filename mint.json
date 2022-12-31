@@ -1,0 +1,69 @@
+{
+  "name": "TuneMy.AI",
+  "logo": {
+    "dark": "/logo/dark.png",
+    "light": "/logo/light.png"
+  },
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#434343",
+    "light": "#F8F8F8",
+    "dark": "#0F1116",
+    "anchors": {
+      "from": "#14151E",
+      "to": "#434343"
+    }
+  },
+  "api": {
+    "baseUrl": "https://api.tunemy.ai",
+    "auth": {
+      "method": "bearer"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Features",
+      "url": "https://tunemy.ai/#features"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "https://tunemy.ai/dashboard"
+  },
+  "anchors": [
+    {
+      "name": "Discord",
+      "icon": "discord",
+      "url": "https://discord.com/invite/AsAkvjpfNE"
+    },
+    {
+      "name": "Contact Us",
+      "icon": "envelope",
+      "url": "mailto:hello@tunemy.ai"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Home",
+      "pages": ["introduction"]
+    },
+    {
+      "group": "Endpoint Examples",
+      "pages": [
+        "endpoints/get-generated-images",
+        "endpoints/start-finetuning-job",
+        "endpoints/generate-images",
+        "endpoints/get-models",
+        "endpoints/get-image-sets",
+        "endpoints/create-image-set",
+        "endpoints/get-image-set",
+        "endpoints/add-images-to-set"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "twitter": "https://twitter.com/mintlify",
+    "github": "https://github.com/mintlify",
+    "linkedin": "https://www.linkedin.com/company/mintsearch"
+  }
+}

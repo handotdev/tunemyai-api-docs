@@ -1,0 +1,15 @@
+---
+title: "Create Image Set"
+description: "This is the first step in the finetuning process. You'll want to start by creating an \"Image Set\"."
+openapi: "POST /image-set"
+---
+
+Your image set is a collection of images that you want to finetune on.
+
+- All the images you want to finetune on.
+- The 'prompt token' that you'll use to reference in the model. We recommend using a unique identifier for your user (eg: uuid). We also prefix and suffix this with `<` and `>` to ensure token uniqueness (ex. `<324179>`)
+- The 'className' of the image set (ex. person, man, cat, dog, mouse). This can be whatever you want, but it's better to keep it specific for better results.\n\nThe API will return a list pre-signed URLs that you can `PUT` your images to.
+
+<Info>
+  We currently have a limitation of 25 images per photo set. If you need more, ping support@tunemy.ai or join our [Discord](https://discord.com/invite/KDycrQyr2K) and create a support ticket.
+</Info>
